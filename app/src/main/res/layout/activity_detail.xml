@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        tools:context=".view.activities.MainActivity">
+
+    <include
+            android:id="@+id/toolbar_view"
+            layout="@layout/toolbar_view_custom_layout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/prog_bar_loading_shops_activity_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_view" />
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_background_activity_detail"
+            android:layout_width="@dimen/dimen_fully_stretchable"
+            android:layout_height="@dimen/dimen_fully_stretchable"
+            android:layout_margin="@dimen/bigger_margin"
+            app:cardCornerRadius="@dimen/card_view_corners"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_view">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_shop_number_activity_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginEnd="@dimen/standard_margin"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:paddingEnd="@dimen/standard_margin"
+                    android:paddingStart="@dimen/standard_margin"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_large"
+                    tools:text="ID"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_shop_name_activity_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/standard_margin"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:textColor="@android:color/black"
+                    tools:text="What is the height of misunderstandings..."/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_shop_address_activity_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/standard_margin"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:textColor="@android:color/black"
+                    tools:text="What is the height of misunderstandings..."/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_shop_annual_profit_activity_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/standard_margin"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:textColor="@android:color/black"
+                    tools:text="What is the height of misunderstandings..."/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_shop_latitude_activity_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/standard_margin"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:textColor="@android:color/black"
+                    tools:text="What is the height of misunderstandings..."/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_shop_longitude_activity_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/standard_margin"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:textColor="@android:color/black"
+                    tools:text="What is the height of misunderstandings..."/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_shop_opening_date_activity_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/standard_margin"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:textColor="@android:color/black"
+                    tools:text="What is the height of misunderstandings..."/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_shop_status_activity_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/standard_margin"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:textColor="@android:color/black"
+                    tools:text="What is the height of misunderstandings..."/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
